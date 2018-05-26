@@ -18,3 +18,5 @@ A new website design for Office To Go
 ### build for production
 
 * need to run the images and fonts gulp tasks manually
+
+### Project Automation

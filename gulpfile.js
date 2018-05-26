@@ -58,4 +58,8 @@ gulp.task("fonts", function() {
   return fontsBuild.pipe(gulp.dest("./dist/fonts/"));
 });
 
+gulp.task("watch", function() {
+  gulp.watch("./src/**/*", ["default"]);
+});
+
 gulp.task("default", ["html", "js", "css", "images", "fonts"]);

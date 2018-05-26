@@ -1,0 +1,25 @@
+{
+  "name": "otg-new-website",
+  "version": "1.0.0",
+  "description": "now website design for Office To Go",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robbethencourt/OTG-new-website.git"
+  },
+  "author": "robert bethencourt",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/robbethencourt/OTG-new-website/issues"
+  },
+  "homepage": "https://github.com/robbethencourt/OTG-new-website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-rename": "^1.2.3"
+  }
+}

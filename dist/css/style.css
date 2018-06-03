@@ -1153,6 +1153,24 @@ ul.listnone {
   text-align: center;
   padding: 0px;
 }
+
+/* background images for each page header section */
+.page-header.contact-us {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    rgba(0, 0, 0, 0.6) url(../images/contactUsBanner-1900x300.jpg) no-repeat
+      center;
+  background-size: cover;
+}
+
+/* background images for each page header section */
+.page-header.about-us {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    rgba(0, 0, 0, 0.6) url(../images/aboutUsBanner-1900x300.jpg) no-repeat
+      center;
+  background-size: cover;
+}
+
+/* continue page styling from original template */
 .page-section {
   padding: 108px 0px;
 }

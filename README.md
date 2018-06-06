@@ -2,6 +2,8 @@
 
 A new website design for Office To Go
 
+[click here to view most current build](https://robbethencourt.github.io/OTG-new-website/dist/)
+
 ### dev environment
 
 * navigate to root folder in the command line

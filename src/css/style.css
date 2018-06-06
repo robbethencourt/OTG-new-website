@@ -1667,6 +1667,11 @@ blockquote {
 .contact-form {
   margin-top: 60px;
 }
+/* email link. This is where the contact for use to be */
+.email-link {
+  font-size: 1.2em;
+  font-weight: bold;
+}
 .map {
   height: 400px;
 }
@@ -2286,6 +2291,9 @@ blockquote {
 @media only screen and (min-width: 768px) {
   .navbar-brand img {
     margin-top: -5px;
+  }
+  .email-link {
+    font-size: 3em;
   }
 }
 

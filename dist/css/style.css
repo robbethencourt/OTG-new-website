@@ -101,6 +101,7 @@
   --secondary: #171717; /* replaces all the origin #446a73 */
   --secondary-dark: #000; /* replaces all the original #375b63 */
   --secondary-light: #c9c9c9; /* replaces all the original #acc4ca */
+  --secondary-ultra-light: #f2f2f2; /* replaces all the original #f9f8f4 */
   --accent: #88c3d1; /* replaces all the original #89abb3 */
 }
 
@@ -327,7 +328,7 @@ button.btn {
   padding-bottom: 40px;
 }
 .section-color {
-  background-color: #f9f8f4;
+  background-color: var(--secondary-ultra-light);
 }
 .section-default-bg {
   background-color: var(--secondary);
@@ -390,7 +391,7 @@ p:last-child {
 /*----- well block -----*/
 
 .well-bg {
-  background-color: #f9f8f4;
+  background-color: var(--secondary-ultra-light);
   padding: 20px;
 }
 .well-inner {
@@ -520,8 +521,7 @@ ul.listnone {
 /*----- Top bar -----*/
 
 .top-bar {
-  background-color: #efeee8;
-  border-bottom: 1px solid #e6e3da;
+  background-color: var(--secondary-ultra-light); /* originally #efeee8 */
   padding-top: 3px;
   padding-bottom: 3px;
 }
@@ -548,7 +548,7 @@ ul.listnone {
   font-weight: 500;
 }
 .header {
-  background-color: #fff; /* original #f9f8f4 */
+  background-color: #fff; /* original var(--secondary-ultra-light) */
   padding-top: 30px;
   padding-bottom: 30px;
   line-height: 2.8;
@@ -1455,7 +1455,7 @@ blockquote {
   margin: 0 0 20px;
   font-size: 19px;
   border-left: 5px solid var(--primary);
-  background-color: #f9f8f4;
+  background-color: var(--secondary-ultra-light);
   font-style: italic;
   line-height: 24px;
 }
@@ -1553,7 +1553,7 @@ blockquote {
   margin-bottom: 40px;
 }
 .children {
-  background-color: #f9f8f4;
+  background-color: var(--secondary-ultra-light);
   padding: 30px;
   margin-top: 30px;
 }
@@ -1980,7 +1980,7 @@ blockquote {
 /*-- feature box --*/
 
 .feature-bg {
-  background-color: #f9f8f4;
+  background-color: var(--secondary-ultra-light);
 }
 .feature-bdr {
   border-right: 5px solid #fff;
@@ -2102,8 +2102,8 @@ blockquote {
   letter-spacing: 1px;
 }
 .st-tabs .nav-tabs > li > a:hover {
-  background-color: #f9f8f4;
-  border-bottom: 1px solid #f9f8f4;
+  background-color: var(--secondary-ultra-light);
+  border-bottom: 1px solid var(--secondary-ultra-light);
   color: #2e3233;
   border-color: transparent;
 }
@@ -2112,13 +2112,13 @@ blockquote {
 .nav-tabs > li.active > a:hover {
   color: var(--primary);
   cursor: default;
-  background-color: #f9f8f4;
+  background-color: var(--secondary-ultra-light);
   border: 1px solid transparent;
   border-bottom-color: transparent;
 }
 .st-tabs .tab-content {
   padding: 30px;
-  background-color: #f9f8f4;
+  background-color: var(--secondary-ultra-light);
 }
 
 /*----- Vertical tabs -----*/
@@ -2182,12 +2182,12 @@ blockquote {
 }
 .st-accordions .panel-default > .panel-heading {
   color: #2e3233;
-  background-color: #f9f8f4;
-  border-color: #f9f8f4;
+  background-color: var(--secondary-ultra-light);
+  border-color: var(--secondary-ultra-light);
 }
 .st-accordions .panel-body {
   padding: 40px;
-  background-color: #f9f8f4;
+  background-color: var(--secondary-ultra-light);
   border-top: transparent;
 }
 .st-accordions .panel-group .panel-heading + .panel-collapse > .list-group,
@@ -2300,7 +2300,7 @@ blockquote {
 /*============= media query =============*/
 @media only screen and (max-width: 768px) {
   .header {
-    background-color: #f9f8f4;
+    background-color: var(--secondary-ultra-light);
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 2.8;

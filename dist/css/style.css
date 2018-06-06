@@ -1045,7 +1045,7 @@ ul.listnone {
 .slider-captions {
   position: absolute;
   bottom: 30%;
-  width: 30%;
+  width: 46%;
 }
 .slider-title {
   color: #fff;
@@ -2269,7 +2269,7 @@ blockquote {
   .slider-captions {
     position: absolute;
     bottom: 18%;
-    width: 30%;
+    width: 70%;
   }
 }
 @media (max-width: 320px) {
@@ -2357,9 +2357,9 @@ blockquote {
 /* Custom sizes (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .slider-captions {
-    width: 60%;
-    left: 15%;
-    bottom: 30%;
+    width: 90%;
+    left: 8%;
+    bottom: 5%;
   }
   .slider-title {
     font-size: 32px;

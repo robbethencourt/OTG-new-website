@@ -1162,10 +1162,23 @@ ul.listnone {
   background-size: cover;
 }
 
-/* background images for each page header section */
 .page-header.about-us {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     rgba(0, 0, 0, 0.6) url(../images/aboutUsBanner-1900x300.jpg) no-repeat
+      center;
+  background-size: cover;
+}
+
+.page-header.locations {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    rgba(0, 0, 0, 0.6) url(../images/locationsBanner-1900x300.jpg) no-repeat
+      center;
+  background-size: cover;
+}
+
+.page-header.services {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    rgba(0, 0, 0, 0.6) url(../images/servicesBanner-1900x300.jpg) no-repeat
       center;
   background-size: cover;
 }

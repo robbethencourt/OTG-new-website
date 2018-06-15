@@ -2308,6 +2308,9 @@ blockquote {
   .email-link {
     font-size: 3em;
   }
+  .footer-widget {
+    padding-bottom: 20px;
+  }
 }
 
 /*============= media query =============*/

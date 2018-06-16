@@ -127,7 +127,7 @@
           <h2>Customer Relationship Management (CRM)</h2>
           <p>CRM is about the right people doing the right thing for the right reasons at the right price while achieving 100% customer satisfaction!</p>
           <h2>OTG Empowers Those With Disabilities</h2>
-          <p>A member of our ownership group is a disabled business owner. As such we know the challanges those with disabilities face on a day-to-day basis. Because we use many of the computer related products to assist those with disabilities, like speech to text software, we have first hand experience that help businesses optimizing their disabled work force, and can assist individuals to more easily communicate electronically with family and friends.</p>
+          <p>A member of our ownership group is a disabled business owner. As such we know the challenges those with disabilities face on a day-to-day basis. Because we use many of the computer related products to assist those with disabilities, like speech to text software, we have first hand experience that help businesses optimizing their disabled work force, and can assist individuals to more easily communicate electronically with family and friends.</p>
         </div>
       </div>
     </div>
@@ -195,7 +195,7 @@
         <div class="col-md-3 team-block col-sm-6"><!-- team block -->
           <div class="well-bg">
             <!-- the below images if ever used in the future should be of size 276 x 298 pixels -->
-            <!-- <div class="well-inner"> <img src="images/team.jpg" alt="" class="img-responsive"> </div> -->
+            <div class="well-inner"> <img src="images/profile-bradley-276x298.jpg" alt="Owner Bradley S. Krause on his all-terrain tank tread chair" class="img-responsive"> </div>
             <div class="team-content"><!-- team content -->
               <h3>Bradley S. Krause Sr. PhD.</h3>
               <span class="designation">Owner</span> </div>
@@ -254,7 +254,7 @@
       <div class="row">
         <div class="col-md-4 footer-widget col-sm-6"> <img src="images/otg-logo.jpg" alt="Office To Go logo">
           <p>We strive to help people by providing extraordinary service and expert repairs using only the highest quality parts available.</p>
-          <p>We service <strong class="text-highlight">Computers, Serveres, Laptops and Networking Equipment.</strong></p>
+          <p>We service <strong class="text-highlight">Computers, Servers, Laptops and Networking Equipment.</strong></p>
         </div>
         <div class="col-md-3 footer-widget col-sm-6">
           <h3 class="footer-widget-title">contact us</h3>
@@ -294,7 +294,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-6">
-          <p class="copyright-text">Copyright © 2018 Office to Go</p>
+          <p class="copyright-text">Copyright © <span id="js-date"></span> Office to Go</p>
         </div>
         <div class="col-md-6 col-sm-6">
           <div class="ft-social-widget"> <a href="https://www.facebook.com/Office-To-Go-Business-SolutionsSouth-Florida-175718079136169/" title="Facebook"><i class="fa fa-facebook"></i></a> </div>
@@ -302,6 +302,17 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+    function addYearToHtml() {
+      let jsYear = document.getElementById("js-date");
+      const textNodeToAppend = document.createTextNode(getCurrentYearString());
+      jsYear.appendChild(textNodeToAppend);
+    }
+    function getCurrentYearString() {
+      return `${new Date().getFullYear()}`;
+    }
+    addYearToHtml();
+  </script>
   <!-- /.tiny footer -->
 <!-- back to top icon -->
 <a href="#0" class="cd-top" title="Go to top">Top</a>

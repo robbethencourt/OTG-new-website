@@ -144,8 +144,8 @@
                 <h3>Address</h3>
                 <h5>South Florida</h5>
                 <address>
-                750 NW 33rd St, Suite A<br>
-                Pompano Beach, FL 33064<br>
+                  750 NW 33rd St, Suite A<br>
+                  Pompano Beach, FL 33064<br>
                 </address>
                 <br />
                 <h5>Central Florida</h5>
@@ -176,7 +176,6 @@
   </div>
 </div>
 <!-- /.main container -->
-<div class="map" id="googleMap"></div>
   <div class="section-default-bg section-space-40">
     <div class="container">
       <div class="row">
@@ -196,7 +195,7 @@
       <div class="row">
         <div class="col-md-4 footer-widget col-sm-6"> <img src="images/otg-logo.jpg" alt="Office To Go logo">
           <p>We strive to help people by providing extraordinary service and expert repairs using only the highest quality parts available.</p>
-          <p>We service <strong class="text-highlight">Computers, Serveres, Laptops and Networking Equipment.</strong></p>
+          <p>We service <strong class="text-highlight">Computers, Servers, Laptops and Networking Equipment.</strong></p>
         </div>
         <div class="col-md-3 footer-widget col-sm-6">
           <h3 class="footer-widget-title">contact us</h3>
@@ -236,7 +235,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-6">
-          <p class="copyright-text">Copyright © 2018 Office to Go</p>
+          <p class="copyright-text">Copyright © <span id="js-date"></span> Office to Go</p>
         </div>
         <div class="col-md-6 col-sm-6">
           <div class="ft-social-widget"> <a href="https://www.facebook.com/Office-To-Go-Business-SolutionsSouth-Florida-175718079136169/" title="Facebook"><i class="fa fa-facebook"></i></a> </div>
@@ -244,6 +243,17 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+    function addYearToHtml() {
+      let jsYear = document.getElementById("js-date");
+      const textNodeToAppend = document.createTextNode(getCurrentYearString());
+      jsYear.appendChild(textNodeToAppend);
+    }
+    function getCurrentYearString() {
+      return `${new Date().getFullYear()}`;
+    }
+    addYearToHtml();
+  </script>
   <!-- /.tiny footer -->
 <!-- back to top icon -->
 <a href="#0" class="cd-top" title="Go to top">Top</a>
@@ -268,34 +278,5 @@ $("#navigation").menumaker({
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <!-- Back to top script -->
 <script src="js/back-to-top.js" type="text/javascript"></script>
-<script>
-var myCenter = new google.maps.LatLng(26.271042, -80.133342);
-
-function initialize() {
-  var mapProp = {
-    center: myCenter,
-    zoom: 9,
-    scrollwheel: false,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-
-  var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-
-    icon: "images/marker.png"
-  });
-
-  marker.setMap(map);
-  var infowindow = new google.maps.InfoWindow({
-    content: "Hello Address"
-  });
-}
-
-google.maps.event.addDomListener(window, "load", initialize);
-</script>
-
-
  </body>
 </html>

@@ -53,7 +53,7 @@
             <div class="col-md-4 store-block col-sm-4 hidden-xs">
               <div class="store-icon"><i class="icon-clock"></i></div>
               <div class="store-box"><span class="store-title">store time</span>
-                <div class="store-time">9AM - 5PM</div>
+                <div class="store-time">9AM - 5PM | M - F</div>
               </div>
             </div>
             <div class="col-md-4 need-block hidden-sm hidden-xs">
@@ -124,10 +124,10 @@
       <!-- /.service-block -->
       <div class="col-md-6 service-image-block col-sm-6"> <!-- service-block -->
         <div class="service-image-inner">
-          <div class="service-img"><a href="service-agreements-single-page.html"><img src="images/serviceAgreements-747x405.jpg" alt="handshake over laptop and paperwork" class="img-responsive"></a></div>
-          <h3><a href="service-agreements-single-page.html" class="heading-title">Service Agreements</a></h3>
-          <p>Personalized service agreements to maintain your technology infrastructure</p>
-          <a href="service-agreements-single-page.html" class="btn-link">Read more</a> </div>
+          <div class="service-img"><a href="service-level-agreements-single-page.html"><img src="images/serviceAgreements-747x405.jpg" alt="handshake over laptop and paperwork" class="img-responsive"></a></div>
+          <h3><a href="service-level-agreements-single-page.html" class="heading-title">Service Level Agreements</a></h3>
+          <p>Personalized Service Level Agreements to maintain your technology infrastructure</p>
+          <a href="service-level-agreements-single-page.html" class="btn-link">Read more</a> </div>
       </div>
       <!-- /.service-block -->
     </div>
@@ -181,7 +181,7 @@
       <div class="row">
         <div class="col-md-4 footer-widget col-sm-6"> <img src="images/otg-logo.jpg" alt="Office To Go logo">
           <p>We strive to help people by providing extraordinary service and expert repairs using only the highest quality parts available.</p>
-          <p>We service <strong class="text-highlight">Computers, Serveres, Laptops and Networking Equipment.</strong></p>
+          <p>We service <strong class="text-highlight">Computers, Servers, Laptops and Networking Equipment.</strong></p>
         </div>
         <div class="col-md-3 footer-widget col-sm-6">
           <h3 class="footer-widget-title">contact us</h3>
@@ -194,7 +194,7 @@
           <p>Office: 954-757-6226 <br>
             Orlando: 407-403-6717</p>
         </div>
-        <div class="col-md-2 footer-widget col-sm-7">
+        <div class="col-md-2 footer-widget col-sm-6">
           <h3 class="footer-widget-title">Navigation</h3>
           <ul class="listnone">
             <li><a href="index.html">Home</a></li>
@@ -203,15 +203,15 @@
             <li><a href="location.html">Locations</a></li>
           </ul>
         </div>
-        <div class="col-md-3 footer-widget col-sm-5">
-          <h3 class="footer-widget-title">Get A Repair Started</h3>
+        <div class="col-md-3 footer-widget col-sm-6">
+          <h3 class="footer-widget-title">Our Services</h3>
           <ul class="listnone">
-            <li><a href="#">PC &amp; MAC Computers</a></li>
-            <li><a href="#">Laptop Repair</a></li>
-            <li><a href="#">Smart phone Repair</a></li>
-            <li><a href="#">Tablet Repair</a></li>
-            <li><a href="#">Game Console</a> </li>
-            <li><a href="#">Data Recovery</a> </li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="consulting-single-page.html">Consulting and App Development</a></li>
+            <li><a href="service-level-agreements-single-page.html">SLAs</a></li>
+            <li><a href="network-single-page.html">Network Services</a></li>
+            <li><a href="internet-single-page.html">Internet / Web</a> </li>
+            <li><a href="computer-forensics-single-page.html">Computer Forensics</a> </li>
           </ul>
         </div>
       </div>
@@ -221,7 +221,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-6">
-          <p class="copyright-text">Copyright © 2018 Office to Go</p>
+          <p class="copyright-text">Copyright © <span id="js-date"></span> Office to Go</p>
         </div>
         <div class="col-md-6 col-sm-6">
           <div class="ft-social-widget"> <a href="https://www.facebook.com/Office-To-Go-Business-SolutionsSouth-Florida-175718079136169/" title="Facebook"><i class="fa fa-facebook"></i></a> </div>
@@ -229,6 +229,17 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+    function addYearToHtml() {
+      let jsYear = document.getElementById("js-date");
+      const textNodeToAppend = document.createTextNode(getCurrentYearString());
+      jsYear.appendChild(textNodeToAppend);
+    }
+    function getCurrentYearString() {
+      return `${new Date().getFullYear()}`;
+    }
+    addYearToHtml();
+  </script>
   <!-- /.tiny footer -->
 <!-- back to top icon -->
 <a href="#0" class="cd-top" title="Go to top">Top</a>

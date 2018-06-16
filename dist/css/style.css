@@ -1852,7 +1852,12 @@ blockquote {
   margin-bottom: 30px;
 }
 .team-block .well-inner {
-  padding: 20px 0px 0px 0px;
+  padding: 0px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 0px;
+  background-color: var(--secondary-ultralight);
+}
+.team-block .well-inner .img-responsive {
   margin: 0 auto;
 }
 .team-content {
@@ -2307,6 +2312,9 @@ blockquote {
   }
   .email-link {
     font-size: 3em;
+  }
+  .footer-widget {
+    padding-bottom: 20px;
   }
 }
 

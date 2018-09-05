@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/robbethencourt/OTG-new-website#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.24.7",
     "gulp": "^3.9.1",
     "gulp-compile-handlebars": "^0.6.1",
-    "gulp-rename": "^1.2.3"
+    "gulp-rename": "^1.4.0"
   }
 }
